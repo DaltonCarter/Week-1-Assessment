@@ -36,6 +36,9 @@ console.log(middleNums)
   to the answers array. 
 */
 
+//COMMENTARY: This one was a PERFECT example of making sure to read the ding dang instructions 3 times, I read it twice, and still almost had it run 3 branches,
+//one for big, small, and equal. and then I read it the 3rd time and saw that the small entry INCLUDED equal. Read 3 times code once.
+
 const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
@@ -43,7 +46,7 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 let answers = []
 
 for(let i = 0; i < bigOrSmallArray.length; i++){
-  if(bigOrSmallArray[i] === 100 || bigOrSmallArray[i] < 100){
+  if(bigOrSmallArray[i] <= 100){
     answers.push('Small')
   } else {
     answers.push('Big')
