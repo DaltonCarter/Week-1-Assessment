@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = "A version Control Protocol. Helps keep track  of progress, and save states for code without a WHOLE LOT of clutter."
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition = "A web based storage site for your Git repos. After all any good technician or coder knows that you either keep backups or suffer immensely."
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -27,6 +31,8 @@
 
 //CODE HERE
 
+let gitInitDefinition = "This is the command that initializes the file(s) so that Git can start keeping track of it."
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -35,6 +41,8 @@
 
 //CODE HERE
 
+let gitCloneDefinition = "It makes an exact copy of a repo that you can then edit without altering the original."
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +50,8 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition = "This command analyzes the wait chain for Git to make sure all of the files have been successfully updated, and nothing is hanging in limbo."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -54,6 +64,8 @@
 
 //CODE HERE
 
+let gitAddDefinition = "This is the command that tells git to add your current work, or lack there-of, to the version history. S.E.S.O people it saves lives."
+let gitAddCode = "git add ."
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -65,7 +77,8 @@
 
 //CODE HERE
 
-
+let gitCommitDefinition = "This command finalizes your addition with a screenshot and a brief message to describe the stage."
+let gitCommitCode = 'git commit -m "Insert text here."'
 //////////////////PROBLEM 8////////////////////
 /*
     Create a variable called 'gitPushDefinition'.  
@@ -73,3 +86,5 @@
 */
 
 //CODE HERE
+
+let gitPushDefinition = "This Command is used to push your git repo up to a waiting repository on Github."
