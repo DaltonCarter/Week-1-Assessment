@@ -11,7 +11,7 @@
 
 //CODE HERE
 
-let gitDefinition = "A version Control Protocol. Helps keep track  of progress, and save states for code without a WHOLE LOT of clutter."
+let gitDefinition = "A version Control Protocol. Helps keep track of progress, and save states for code without a WHOLE LOT of clutter."
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -41,7 +41,7 @@ let gitInitDefinition = "This is the command that initializes the file(s) so tha
 
 //CODE HERE
 
-let gitCloneDefinition = "It makes an exact copy of a repo that you can then edit without altering the original."
+let gitCloneDefinition = "It makes an exact copy of a repo that you can then edit without altering the original, until a commit is made."
 
 //////////////////PROBLEM 5////////////////////
 /*
