@@ -27,6 +27,10 @@
     in cents. 
 */
 
+// COMMENTARY: So as an opener, I am one of those people, that absolutely CAN do a lot of stuff in their head, which is why there is a distinct LACK of
+//pseudo code in my work. I will fix that, so hopefully the commentary will help walk you through my head space here. Also I try to inject some of my
+//brand of humor into what I type/write. If you get a chuckle out of some of it it was worth it in my eyes. You have been warned...it's all clean don't sweat it.
+
 const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
@@ -49,7 +53,14 @@ const pinkPrice = .55
     Log `totalAcres` to the console.
 */
 
+
+
+
 // CODE HERE
+
+//COMMENTARY: I ran through several possibilities, like nesting this all together which WOULD look neater and = less code, 
+//but this way I am print out more real time information incase something does go KABOOM. Mercifully it did not. Besides the more I type this out the 
+//better my syntax recall will be.
 
 let totalAcres = 0
 
@@ -85,6 +96,9 @@ console.log(totalAcres)
 
 // CODE HERE
 
+//COMMENTARY: I am sure that there was a more coding heavy way to do this, but I've had K.I.S.S hammered into me for 20 years, so I went with the simple and direct method
+//of giving it what i know and running it that way. Also I doubt we're going to suddenly have an 8 day week anytime soon, so as long as the process is tied
+//to the variable for total acres this will still be able to adapt to changes in how many acre were worked with.
 
 let averageDailyAcres = totalAcres / 7
 console.log(averageDailyAcres)
@@ -122,6 +136,10 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
+
+//COMMENTARY: This one gave me some sass, as you can tell by the added if statement to make sure our farm hands weren't harvesting the neighbors trees. 
+//Thoughtful and generally kind person I may be, but that doesn't mean i'm gonna do your work for free. 
+//So I ran a while loop that ran this code until it triggered the if statement, and viola our workers had a nice easy time on the final day they only had to do 3 acres.
 
 while (acresLeft > 0) {
     if(averageDailyAcres > acresLeft){
@@ -161,7 +179,11 @@ console.log('This took ' + days + ' Days.')
 
 // CODE HERE
 
-
+//COMMENTARY: Not gonna lie the wording for this one tripped me up a bit, PURELY because I read your hint AFTER I started brainstorming and it derailed me XD.
+// Now, I settled on this set up, because once again every nested idea I had just didn't fit, it did occur to me that I might be able to use a switch method,
+//but I wasn't confident enough in the possible results to swap out what was already working. I'll play with that on my own time.
+//So, we have one for loop running the FujiTons array to completion, and since we are using the same weight for every day, for all three, I was then able
+//to use splice to complete the other two easy as that.
 
  let fujiTons = []
  let galaTons = []
@@ -172,10 +194,9 @@ console.log('This took ' + days + ' Days.')
     }
 console.log(fujiTons)
 
-for(let i = 0; i < 1; i++){
-    galaTons = fujiTons.slice(0, 7)
-    pinkTons = fujiTons.slice(0, 7)
-}
+galaTons = fujiTons.slice(0, 7)
+pinkTons = fujiTons.slice(0, 7)
+
 console.log(galaTons)
 console.log(pinkTons)
 
@@ -196,6 +217,9 @@ console.log(pinkTons)
 */
 
 // CODE HERE 
+
+//COMMENTARY: Most of my math classes are FAR FAR behind me, so I had to double check my formula before doing this one.
+//Again because we used all of the same info for each type i just had it run the math, in the proper order of operation, for each.
 
  let fujiPounds = 0
  let galaPounds = 0
@@ -234,6 +258,10 @@ console.log(pinkTons)
 
 // CODE HERE
 
+//COMMENTARY: this one is getting a comment because I had to remind myself the ENTIRE time that we're dealing with TENS of THOUSANDS of pounds here,
+//so when I first ran the math I was positive i messed it up, looked up the formula, turned out I had it right, and went on with programming the
+//math for the other 2.
+
  let fujiProfit = 0
  let galaProfit = 0
  let pinkProfit = 0
@@ -259,5 +287,7 @@ console.log(pinkProfit)
 */
 
 // CODE HERE
+//COMMENTARY: I will do another one of these somewhere cause this is just flavor text, but this one was very cut and dry. Add all the things, load into variable, PARTY!
+
 let  totalProfit = fujiProfit + galaProfit + pinkProfit
 console.log(totalProfit)
