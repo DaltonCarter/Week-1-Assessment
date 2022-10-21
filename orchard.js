@@ -62,6 +62,9 @@ const pinkPrice = .55
 //but this way I am print out more real time information incase something does go KABOOM. Mercifully it did not. Besides the more I type this out the 
 //better my syntax recall will be.
 
+
+//Review: alternate answer; totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i] or to have it run in seperate lines.
+
 let totalAcres = 0
 
 for(let i = 0; i < fujiAcres.length; i++){
@@ -144,6 +147,7 @@ let days = 0
 while (acresLeft > 0) {
     if(averageDailyAcres > acresLeft){
         acresLeft = 0
+        days += 1
     } else {
         days += 1
         acresLeft = acresLeft - averageDailyAcres
