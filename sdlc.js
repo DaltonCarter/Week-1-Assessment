@@ -18,6 +18,7 @@
 // Implementation
 // Testing & Integration
 // Maintain
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable for each of the above steps of the Software Development Lifecycle and set the values of each variable to a definition of the step.
@@ -33,5 +34,5 @@ const Implementation = "This is where the the development team creates the produ
 
 const testingAndIntegration = "This phase is where the pieces are brought together, and combined and tested to ensure the product is going to work as intended and with minimal bugs."
 
-const maintain = "The maintenance phase is where anything that slipped past the testing phase before release geets discovered and resolved. This is frequently an ongoing process."
+const maintain = "The maintenance phase is where anything that slipped past the testing phase before release gets discovered and resolved. This is frequently an ongoing process."
 
