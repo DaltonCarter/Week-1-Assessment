@@ -183,27 +183,46 @@ console.log('This took ' + days + ' Days.')
 
 // CODE HERE
 
-//COMMENTARY: Not gonna lie the wording for this one tripped me up a bit, PURELY because I read your hint AFTER I started brainstorming and it derailed me XD.
-// Now, I settled on this set up, because once again every nested idea I had just didn't fit, it did occur to me that I might be able to use a switch method,
-//but I wasn't confident enough in the possible results to swap out what was already working. I'll play with that on my own time.
-//So, we have one for loop running the FujiTons array to completion, and since we are using the same weight for every day, for all three, I was then able
-//to use splice to complete the other two easy as that.
+//COMMENTARY: I got this one WAYYYYY wrong...sad. Once again always re-read.
+
+//Actual Solution: for(let i = 0; i < fujiAcres.length; i++ ){ let tonConvert = fujiAcres[i] * 6.5  fujiTons.push(tonConvert)} do this for each entry.
 
  let fujiTons = []
  let galaTons = []
  let pinkTons = []
+//My original answer:
+//     for(let i = 0; i < 7; i++){
+//         fujiTons.push(6.5)
+//     }
+// console.log(fujiTons)
 
-    for(let i = 0; i < 7; i++){
-        fujiTons.push(6.5)
-    }
+// galaTons = fujiTons.slice(0, 7)
+// pinkTons = fujiTons.slice(0, 7)
+
+// console.log(galaTons)
+// console.log(pinkTons)
+
+//ACTUAL answer typed out for the Experience and because i HATE leaving something broken once I know how to fix it:
+
+let tonConvert = 0
+
+for(let i = 0; i < fujiAcres.length; i++){
+    tonConvert = fujiAcres[i] * 6.5
+    fujiTons.push(tonConvert)
+}
 console.log(fujiTons)
 
-galaTons = fujiTons.slice(0, 7)
-pinkTons = fujiTons.slice(0, 7)
-
+for(let i = 0; i < galaAcres.length; i++){
+    tonConvert = galaAcres[i] * 6.5
+    galaTons.push(tonConvert)
+}
 console.log(galaTons)
-console.log(pinkTons)
 
+for(let i = 0; i < pinkAcres.length; i++){
+    tonConvert = pinkAcres[i] * 6.5
+    pinkTons.push(tonConvert)
+}
+console.log(pinkTons)
 // PROBLEM 5
 
 /*
@@ -222,24 +241,52 @@ console.log(pinkTons)
 
 // CODE HERE 
 
-//COMMENTARY: Most of my math classes are FAR FAR behind me, so I had to double check my formula before doing this one.
-//Again because we used all of the same info for each type i just had it run the math, in the proper order of operation, for each.
+//COMMENTARY: whelp since the last one was FUBAR this is also FUBAR.
+
+//actual solution: I missed it in the review so I wrote this one out myself. XD
 
  let fujiPounds = 0
  let galaPounds = 0
  let pinkPounds = 0
 
- fujiPounds = (6.5 * 7) * 2000
+ let totalFuji = 0
+ let totalGala = 0
+ let totalPink = 0
 
- console.log(fujiPounds)
+ for(i = 0; i < fujiTons.length; i++){
+   totalFuji = fujiTons[i] + totalFuji
+ }
+ console.log(totalFuji)
 
- galaPounds = (6.5 * 7) * 2000
+ for(i = 0; i < galaTons.length; i++){
+   totalGala = galaTons[i] + totalGala
+ }
+ console.log(totalGala)
 
- console.log(galaPounds)
+ for(i = 0; i < pinkTons.length; i++){
+   totalPink = pinkTons[i] + totalPink
+ }
+ console.log(totalPink)
 
- pinkPounds = (6.5 * 7) * 2000
+ fujiPounds = totalFuji * 2000
+ galaPounds = totalGala * 2000
+ pinkPounds = totalPink * 2000
 
- console.log(pinkPounds)
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
+
+//  fujiPounds = (6.5 * 7) * 2000
+
+//  console.log(fujiPounds)
+
+//  galaPounds = (6.5 * 7) * 2000
+
+//  console.log(galaPounds)
+
+//  pinkPounds = (6.5 * 7) * 2000
+
+//  console.log(pinkPounds)
 
 
 
@@ -262,13 +309,12 @@ console.log(pinkTons)
 
 // CODE HERE
 
-//COMMENTARY: this one is getting a comment because I had to remind myself the ENTIRE time that we're dealing with TENS of THOUSANDS of pounds here,
-//so when I first ran the math I was positive i messed it up, looked up the formula, turned out I had it right, and went on with programming the
-//math for the other 2.
+//COMMENTARY: OKAY, now that I fixed the other two this answer is now correct. 
 
  let fujiProfit = 0
  let galaProfit = 0
  let pinkProfit = 0
+
 
 fujiProfit = fujiPounds * fujiPrice
 console.log(fujiProfit)
@@ -291,7 +337,7 @@ console.log(pinkProfit)
 */
 
 // CODE HERE
-//COMMENTARY: I will do another one of these somewhere cause this is just flavor text, but this one was very cut and dry. Add all the things, load into variable, PARTY!
+//COMMENTARY: See the above comment, a pox on all early AM brain fog! always read and reread, and reread AGAIN!
 
 let  totalProfit = fujiProfit + galaProfit + pinkProfit
 console.log(totalProfit)
